@@ -13,15 +13,15 @@ const Home = () => {
             {snap.intro && (
                 <motion.section className="home" {...slideAnimation('left')}>
                     <motion.header {...slideAnimation("down")}>
-                        <img src="./nus.png" alt="logo" className="w-8 h-8 object-contain"/>
+                        <img src="./NUS-Computing-Logo.png" alt="logo" className="lg:h-40 h-20 max-w-2xl"/>
+                        <motion.div {...headTextAnimation}>
+                            <h2 className="head-text" style={{ fontSize: '100px' }} >
+                                Let's <br className="x2:block hidden"/>stylez
+                            </h2>
+                        </motion.div>
                     </motion.header>
 
                     <motion.div className="home-content" {...headContainerAnimation}>
-                        <motion.div {...headTextAnimation}>
-                            <h2 className="head-text">
-                                Let's <br className="xl:block hidden"/><i> stylez</i>
-                            </h2>
-                        </motion.div>
                         <motion.div {...headContentAnimation} className="flex flex-col gap-5">
                             <p className="max-w-md font-normal text-grey-600 text-base">
                                 Create your oh-so-fabulous shirt: Because, let's be real, the only thing more impressive 
